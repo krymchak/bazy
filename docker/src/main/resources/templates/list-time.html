@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Working time</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body class="p-3 mb-2 bg-dark">
+<div class="container my-2">
+    <div class="card">
+        <div class="card-body">
+            <div th:switch="${times}" class="container my-5">
+                <h2 class="text-center" th:text="${nameUser}+' '+${lastNameUser}"><p></p></h2>
+                <tr th:each="error : ${errors}">
+                    <h4 class="text-center text-danger" th:text="${error}"></h4>
+                </tr>
+
+                <p th:if="${!isManager}" class="my-7">
+                    <button class="btn btn-dark" th:onclick="'javascript:add();'"><i
+                            class="fas fa-plus"></i></button>
+                </p>
+                <p th:if="${isManager}" class="my-7">
+                    <button class="btn btn-dark" th:onclick="'javascript:addSalary(\'' + ${userId} +'\');'">Add salary</button>
+                </p>
+                <p th:if="${isManager}" class="my-7">
+                    <a th:href="@{/web/time/raport}" class="btn btn-dark">Raport</a>
+                </p>
+                <form action="#" th:action="@{/web/time/month}" method="get">
+                    <input type="month" id="month" name="month" th:value="*{month}" min="2018-03">
+                    <input type="submit" class="btn btn-dark" name = "filter" value="Filtruj">
+                    <input type="submit" class="btn btn-dark" name = "raport" value="Generuj raport">
+                </form>
+                <td class="text-left"><a th:href="@{/web/time/list}" class="btn btn-dark"><i>Pokaz wszystko</i></a></td>
+                <div style="overflow: auto;">
+                    <h3 class="text-center text-info" th:case="null">No time yet!</h3>
+                    <div th:case="*">
+                        <table class="table table-bordered table-hover">
+                            <thead class="thead-dark">
+                            <tr>
+                                <th class="text-center">Start</th>
+                                <th class="text-center">End</th>
+                                <th class="text-center">Hours</th>
+                                <th class="text-center">Status</th>
+                                <th class="text-center">Info</th>
+                                <th class="text-center">Edit</th>
+                                <th class="text-center">Delete</th>
+                                <th th:if="${isManager}" class="text-center">Accept</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr th:each="time : ${times}">
+                                <td class="text-center align-middle" th:text="${time.getTimeStartString()}"></td>
+                                <td class="text-center align-middle" th:text="${time.getTimeEndString()}"></td>
+                                <td class="text-center align-middle" th:text="${time.workingHours()}"></td>
+
+                                <div th:switch="${time.status}">
+                                    <td th:case="'accepted'" class="text-center align-middle text-success" th:text="${time.status}"></td>
+                                    <td th:case="'in progress'" class="text-center align-middle text-danger" th:text="${time.status}"></td>
+                                </div>
+                                <td  class="text-center"><button class="btn btn-dark" th:onclick="'javascript:note(\'' + ${time.id} +'\');'"><i
+                                        class="fas fa-sticky-note"></i></button></td>
+                                <div th:switch="${time.status}">
+                                    <td th:case="'accepted'" class="text-center"><div class="btn btn-secondary disabled"><i class="far fa-edit "></i></div></td>
+                                    <td th:case="'in progress'" class="text-center"><button class="btn btn-dark" th:onclick="'javascript:update(\'' + ${time.id} +'\');'"><i
+                                            class="fas fa-edit"></i></button></td>
+                                </div>
+                                <div th:switch="${time.status}">
+                                    <td th:case="'accepted'" class="text-center"><div class="btn btn-secondary disabled"><i class="fas fa-trash-alt "></i></div></td>
+                                    <td th:case="'in progress'" class="text-center"><button class="btn btn-dark" th:onclick="'javascript:deleteTime(\'' + ${time.id} +'\');'"><i
+                                            class="fas fa-trash-alt"></i></button></td>
+                                    <!--<td th:case="'in progress'" class="text-center"><a th:href="@{/web/time/{id}/delete(id=${time.id})}" class="btn btn-dark"><i class="fas fa-trash-alt "></i></a></td>-->
+                                </div>
+                                <div th:if="${isManager}" th:switch="${time.status}">
+                                    <td th:case="'accepted'" class="text-center"><div class="btn btn-secondary disabled"><i class="far fa-check-circle"></i></div></td>
+                                    <!--<td th:case="'in progress'" class="text-center"><a th:href="@{/web/time/{id}/accept(id=${time.id})}" class="btn btn-dark"><i class="far fa-check-circle "></i></a></td>-->
+                                    <td th:case="'in progress'" class="text-center"><button class="btn btn-dark" th:onclick="'javascript:acceptTime(\'' + ${time.id} +'\');'"><i
+                                            class="far fa-check-circle"></i></button></td>
+                                </div>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h5 class="p-3 mb-2 bg-dark text-white text-right" >
+                            <p th:text="'Sum of hours ' + ${#aggregates.sum(times.![workingHours()])}"></p>
+                            <p th:text="'Salary ' + ${#aggregates.sum(times.![workingHours()])}*${salary}"></p>
+                        </h5>
+                    </div>
+                    <form th:if="${!isManager}" th:action="@{/web/logout}" method="post">
+                        <input class="btn btn-dark" type="submit" value="Sign Out">
+                    </form>
+                    <td th:if="${isManager}" class="text-left"><a th:href="@{/web/users}" class="btn btn-dark"><i class="fas fa-long-arrow-alt-left"> Back</i></a></td>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Popup -->
+<div class="container" >
+    <div class="modal" id="myModal" th:fragment="view">
+    </div>
+</div>
+</body>
+
+<script>
+    function add() {
+    var url = '/web/time/new/';
+    $("#myModal").load(url);
+    $('#myModal').modal('show');
+}
+
+function note(id) {
+    var url = '/web/time/'+id +'/note';
+    $("#myModal").load(url);
+    $('#myModal').modal('show');
+}
+
+function update(id) {
+    var url =  '/web/time/'+id +'/change';
+    $("#myModal").load(url);
+    $('#myModal').modal('show');
+}
+
+function deleteTime(id) {
+        var url =  '/web/time/'+id +'/answerDelete';
+        $("#myModal").load(url);
+        $('#myModal').modal('show');
+    }
+
+    function acceptTime(id) {
+        var url =  '/web/time/'+id +'/answerAccept';
+        $("#myModal").load(url);
+        $('#myModal').modal('show');
+    }
+function addSalary(id) {
+    var url =  '/web/users/'+id +'/salary';
+    $("#myModal").load(url);
+    $('#myModal').modal('show');
+}
+</script>
+
+</html>

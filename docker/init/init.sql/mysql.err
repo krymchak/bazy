@@ -1,0 +1,605 @@
+2021-01-10T10:43:23.831551Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2021-01-10T10:43:25.619743Z 0 [Warning] InnoDB: New log files created, LSN=45790
+2021-01-10T10:43:25.919171Z 0 [Warning] InnoDB: Creating foreign key constraint system tables.
+2021-01-10T10:43:26.057115Z 0 [Warning] No existing UUID has been found, so we assume that this is the first time that this server has been started. Generating a new UUID: ab30d079-5330-11eb-b4e4-02420ad00064.
+2021-01-10T10:43:26.070304Z 0 [Warning] Gtid table is not ready to be used. Table 'mysql.gtid_executed' cannot be opened.
+2021-01-10T10:43:26.081249Z 1 [Warning] root@localhost is created with an empty password ! Please consider switching off the --initialize-insecure option.
+2021-01-10T10:43:43.416960Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2021-01-10T10:43:43.589435Z 0 [Note] mysqld (mysqld 5.7.27-log) starting as process 90 ...
+2021-01-10T10:43:43.848608Z 0 [Note] InnoDB: PUNCH HOLE support available
+2021-01-10T10:43:43.861449Z 0 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2021-01-10T10:43:43.862187Z 0 [Note] InnoDB: Uses event mutexes
+2021-01-10T10:43:43.862479Z 0 [Note] InnoDB: GCC builtin __atomic_thread_fence() is used for memory barrier
+2021-01-10T10:43:43.862771Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2021-01-10T10:43:43.863018Z 0 [Note] InnoDB: Using Linux native AIO
+2021-01-10T10:43:43.863695Z 0 [Note] InnoDB: Number of pools: 1
+2021-01-10T10:43:43.877313Z 0 [Note] InnoDB: Using CPU crc32 instructions
+2021-01-10T10:43:43.880422Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2021-01-10T10:43:43.941897Z 0 [Note] InnoDB: Completed initialization of buffer pool
+2021-01-10T10:43:43.965698Z 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+2021-01-10T10:43:44.029825Z 0 [Note] InnoDB: Highest supported file format is Barracuda.
+2021-01-10T10:43:44.257060Z 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2021-01-10T10:43:44.261223Z 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2021-01-10T10:43:44.371336Z 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+2021-01-10T10:43:44.377877Z 0 [Note] InnoDB: 96 redo rollback segment(s) found. 96 redo rollback segment(s) are active.
+2021-01-10T10:43:44.378454Z 0 [Note] InnoDB: 32 non-redo rollback segment(s) are active.
+2021-01-10T10:43:44.386991Z 0 [Note] InnoDB: Waiting for purge to start
+2021-01-10T10:43:44.455982Z 0 [Note] InnoDB: 5.7.27 started; log sequence number 2626390
+2021-01-10T10:43:44.456929Z 0 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
+2021-01-10T10:43:44.456935Z 0 [Note] Plugin 'FEDERATED' is disabled.
+2021-01-10T10:43:44.598874Z 0 [Note] InnoDB: Buffer pool(s) load completed at 210110 10:43:44
+2021-01-10T10:43:44.616958Z 0 [Note] Found ca.pem, server-cert.pem and server-key.pem in data directory. Trying to enable SSL support using them.
+2021-01-10T10:43:44.622119Z 0 [Warning] CA certificate ca.pem is self signed.
+2021-01-10T10:43:44.634006Z 0 [Warning] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+2021-01-10T10:43:44.748433Z 0 [Note] Failed to start slave threads for channel ''
+2021-01-10T10:43:44.906368Z 0 [Note] Event Scheduler: Loaded 0 events
+2021-01-10T10:43:44.907076Z 0 [Note] mysqld: ready for connections.
+Version: '5.7.27-log'  socket: '/var/run/mysqld/mysqld.sock'  port: 0  MySQL Community Server (GPL)
+2021-01-10T10:43:45.757095Z 0 [Note] Giving 0 client threads a chance to die gracefully
+2021-01-10T10:43:45.757475Z 0 [Note] Shutting down slave threads
+2021-01-10T10:43:45.757785Z 0 [Note] Forcefully disconnecting 0 remaining clients
+2021-01-10T10:43:45.758109Z 0 [Note] Event Scheduler: Purging the queue. 0 events
+2021-01-10T10:43:45.764876Z 0 [Note] Binlog end
+2021-01-10T10:43:45.781899Z 0 [Note] Shutting down plugin 'ngram'
+2021-01-10T10:43:45.786966Z 0 [Note] Shutting down plugin 'partition'
+2021-01-10T10:43:45.791992Z 0 [Note] Shutting down plugin 'BLACKHOLE'
+2021-01-10T10:43:45.794782Z 0 [Note] Shutting down plugin 'ARCHIVE'
+2021-01-10T10:43:45.795156Z 0 [Note] Shutting down plugin 'PERFORMANCE_SCHEMA'
+2021-01-10T10:43:45.795723Z 0 [Note] Shutting down plugin 'MRG_MYISAM'
+2021-01-10T10:43:45.796073Z 0 [Note] Shutting down plugin 'MyISAM'
+2021-01-10T10:43:45.796609Z 0 [Note] Shutting down plugin 'INNODB_SYS_VIRTUAL'
+2021-01-10T10:43:45.796959Z 0 [Note] Shutting down plugin 'INNODB_SYS_DATAFILES'
+2021-01-10T10:43:45.797210Z 0 [Note] Shutting down plugin 'INNODB_SYS_TABLESPACES'
+2021-01-10T10:43:45.797443Z 0 [Note] Shutting down plugin 'INNODB_SYS_FOREIGN_COLS'
+2021-01-10T10:43:45.797667Z 0 [Note] Shutting down plugin 'INNODB_SYS_FOREIGN'
+2021-01-10T10:43:45.797895Z 0 [Note] Shutting down plugin 'INNODB_SYS_FIELDS'
+2021-01-10T10:43:45.798116Z 0 [Note] Shutting down plugin 'INNODB_SYS_COLUMNS'
+2021-01-10T10:43:45.798324Z 0 [Note] Shutting down plugin 'INNODB_SYS_INDEXES'
+2021-01-10T10:43:45.798529Z 0 [Note] Shutting down plugin 'INNODB_SYS_TABLESTATS'
+2021-01-10T10:43:45.798842Z 0 [Note] Shutting down plugin 'INNODB_SYS_TABLES'
+2021-01-10T10:43:45.799147Z 0 [Note] Shutting down plugin 'INNODB_FT_INDEX_TABLE'
+2021-01-10T10:43:45.799354Z 0 [Note] Shutting down plugin 'INNODB_FT_INDEX_CACHE'
+2021-01-10T10:43:45.799557Z 0 [Note] Shutting down plugin 'INNODB_FT_CONFIG'
+2021-01-10T10:43:45.799859Z 0 [Note] Shutting down plugin 'INNODB_FT_BEING_DELETED'
+2021-01-10T10:43:45.800131Z 0 [Note] Shutting down plugin 'INNODB_FT_DELETED'
+2021-01-10T10:43:45.800412Z 0 [Note] Shutting down plugin 'INNODB_FT_DEFAULT_STOPWORD'
+2021-01-10T10:43:45.800651Z 0 [Note] Shutting down plugin 'INNODB_METRICS'
+2021-01-10T10:43:45.800873Z 0 [Note] Shutting down plugin 'INNODB_TEMP_TABLE_INFO'
+2021-01-10T10:43:45.801196Z 0 [Note] Shutting down plugin 'INNODB_BUFFER_POOL_STATS'
+2021-01-10T10:43:45.801460Z 0 [Note] Shutting down plugin 'INNODB_BUFFER_PAGE_LRU'
+2021-01-10T10:43:45.801855Z 0 [Note] Shutting down plugin 'INNODB_BUFFER_PAGE'
+2021-01-10T10:43:45.802135Z 0 [Note] Shutting down plugin 'INNODB_CMP_PER_INDEX_RESET'
+2021-01-10T10:43:45.802332Z 0 [Note] Shutting down plugin 'INNODB_CMP_PER_INDEX'
+2021-01-10T10:43:45.802525Z 0 [Note] Shutting down plugin 'INNODB_CMPMEM_RESET'
+2021-01-10T10:43:45.802772Z 0 [Note] Shutting down plugin 'INNODB_CMPMEM'
+2021-01-10T10:43:45.802978Z 0 [Note] Shutting down plugin 'INNODB_CMP_RESET'
+2021-01-10T10:43:45.803175Z 0 [Note] Shutting down plugin 'INNODB_CMP'
+2021-01-10T10:43:45.803433Z 0 [Note] Shutting down plugin 'INNODB_LOCK_WAITS'
+2021-01-10T10:43:45.803669Z 0 [Note] Shutting down plugin 'INNODB_LOCKS'
+2021-01-10T10:43:45.804006Z 0 [Note] Shutting down plugin 'INNODB_TRX'
+2021-01-10T10:43:45.804234Z 0 [Note] Shutting down plugin 'InnoDB'
+2021-01-10T10:43:45.804647Z 0 [Note] InnoDB: FTS optimize thread exiting.
+2021-01-10T10:43:45.805030Z 0 [Note] InnoDB: Starting shutdown...
+2021-01-10T10:43:45.906085Z 0 [Note] InnoDB: Dumping buffer pool(s) to /var/lib/mysql/ib_buffer_pool
+2021-01-10T10:43:45.914138Z 0 [Note] InnoDB: Buffer pool(s) dump completed at 210110 10:43:45
+2021-01-10T10:43:47.229912Z 0 [Note] InnoDB: Shutdown completed; log sequence number 2643032
+2021-01-10T10:43:47.241693Z 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2021-01-10T10:43:47.254199Z 0 [Note] Shutting down plugin 'MEMORY'
+2021-01-10T10:43:47.254818Z 0 [Note] Shutting down plugin 'CSV'
+2021-01-10T10:43:47.256535Z 0 [Note] Shutting down plugin 'sha256_password'
+2021-01-10T10:43:47.256983Z 0 [Note] Shutting down plugin 'mysql_native_password'
+2021-01-10T10:43:47.257523Z 0 [Note] Shutting down plugin 'binlog'
+2021-01-10T10:43:47.260483Z 0 [Note] mysqld: Shutdown complete
+
+2021-01-10T10:43:47.568715Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2021-01-10T10:43:47.579722Z 0 [Note] mysqld (mysqld 5.7.27-log) starting as process 1 ...
+2021-01-10T10:43:47.604488Z 0 [Note] InnoDB: PUNCH HOLE support available
+2021-01-10T10:43:47.605020Z 0 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2021-01-10T10:43:47.605735Z 0 [Note] InnoDB: Uses event mutexes
+2021-01-10T10:43:47.606094Z 0 [Note] InnoDB: GCC builtin __atomic_thread_fence() is used for memory barrier
+2021-01-10T10:43:47.606441Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2021-01-10T10:43:47.606764Z 0 [Note] InnoDB: Using Linux native AIO
+2021-01-10T10:43:47.607455Z 0 [Note] InnoDB: Number of pools: 1
+2021-01-10T10:43:47.607970Z 0 [Note] InnoDB: Using CPU crc32 instructions
+2021-01-10T10:43:47.612407Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2021-01-10T10:43:47.632046Z 0 [Note] InnoDB: Completed initialization of buffer pool
+2021-01-10T10:43:47.639165Z 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+2021-01-10T10:43:47.687217Z 0 [Note] InnoDB: Highest supported file format is Barracuda.
+2021-01-10T10:43:47.763341Z 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2021-01-10T10:43:47.765638Z 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2021-01-10T10:43:47.857806Z 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+2021-01-10T10:43:47.864089Z 0 [Note] InnoDB: 96 redo rollback segment(s) found. 96 redo rollback segment(s) are active.
+2021-01-10T10:43:47.864525Z 0 [Note] InnoDB: 32 non-redo rollback segment(s) are active.
+2021-01-10T10:43:47.865127Z 0 [Note] InnoDB: Waiting for purge to start
+2021-01-10T10:43:47.915589Z 0 [Note] InnoDB: 5.7.27 started; log sequence number 2643032
+2021-01-10T10:43:47.916359Z 0 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
+2021-01-10T10:43:47.916565Z 0 [Note] Plugin 'FEDERATED' is disabled.
+2021-01-10T10:43:47.964602Z 0 [Note] InnoDB: Buffer pool(s) load completed at 210110 10:43:47
+2021-01-10T10:43:47.970188Z 0 [Note] Found ca.pem, server-cert.pem and server-key.pem in data directory. Trying to enable SSL support using them.
+2021-01-10T10:43:47.973851Z 0 [Warning] CA certificate ca.pem is self signed.
+2021-01-10T10:43:47.976839Z 0 [Note] Server hostname (bind-address): 'master_1'; port: 3306
+2021-01-10T10:43:47.979311Z 0 [Note]   - 'master_1' resolves to '10.208.0.100';
+2021-01-10T10:43:47.979822Z 0 [Note] Server socket created on IP: '10.208.0.100'.
+2021-01-10T10:43:47.996022Z 0 [Warning] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+2021-01-10T10:43:48.047698Z 0 [Note] Failed to start slave threads for channel ''
+2021-01-10T10:43:48.169451Z 0 [Note] Event Scheduler: Loaded 0 events
+2021-01-10T10:43:48.170005Z 0 [Note] mysqld: ready for connections.
+Version: '5.7.27-log'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server (GPL)
+2021-01-10T11:29:01.590330Z 0 [Note] Giving 0 client threads a chance to die gracefully
+2021-01-10T11:29:01.591467Z 0 [Note] Shutting down slave threads
+2021-01-10T11:29:01.596439Z 0 [Note] Forcefully disconnecting 0 remaining clients
+2021-01-10T11:29:01.597209Z 0 [Note] Event Scheduler: Purging the queue. 0 events
+2021-01-10T11:29:01.613453Z 0 [Note] Binlog end
+2021-01-10T11:29:01.632168Z 0 [Note] Shutting down plugin 'ngram'
+2021-01-10T11:29:01.636929Z 0 [Note] Shutting down plugin 'partition'
+2021-01-10T11:29:01.637874Z 0 [Note] Shutting down plugin 'BLACKHOLE'
+2021-01-10T11:29:01.638425Z 0 [Note] Shutting down plugin 'ARCHIVE'
+2021-01-10T11:29:01.639131Z 0 [Note] Shutting down plugin 'PERFORMANCE_SCHEMA'
+2021-01-10T11:29:01.639727Z 0 [Note] Shutting down plugin 'MRG_MYISAM'
+2021-01-10T11:29:01.640256Z 0 [Note] Shutting down plugin 'MyISAM'
+2021-01-10T11:29:01.640734Z 0 [Note] Shutting down plugin 'INNODB_SYS_VIRTUAL'
+2021-01-10T11:29:01.641315Z 0 [Note] Shutting down plugin 'INNODB_SYS_DATAFILES'
+2021-01-10T11:29:01.641927Z 0 [Note] Shutting down plugin 'INNODB_SYS_TABLESPACES'
+2021-01-10T11:29:01.642542Z 0 [Note] Shutting down plugin 'INNODB_SYS_FOREIGN_COLS'
+2021-01-10T11:29:01.643026Z 0 [Note] Shutting down plugin 'INNODB_SYS_FOREIGN'
+2021-01-10T11:29:01.643486Z 0 [Note] Shutting down plugin 'INNODB_SYS_FIELDS'
+2021-01-10T11:29:01.643936Z 0 [Note] Shutting down plugin 'INNODB_SYS_COLUMNS'
+2021-01-10T11:29:01.644432Z 0 [Note] Shutting down plugin 'INNODB_SYS_INDEXES'
+2021-01-10T11:29:01.645015Z 0 [Note] Shutting down plugin 'INNODB_SYS_TABLESTATS'
+2021-01-10T11:29:01.645490Z 0 [Note] Shutting down plugin 'INNODB_SYS_TABLES'
+2021-01-10T11:29:01.645984Z 0 [Note] Shutting down plugin 'INNODB_FT_INDEX_TABLE'
+2021-01-10T11:29:01.646422Z 0 [Note] Shutting down plugin 'INNODB_FT_INDEX_CACHE'
+2021-01-10T11:29:01.646903Z 0 [Note] Shutting down plugin 'INNODB_FT_CONFIG'
+2021-01-10T11:29:01.647438Z 0 [Note] Shutting down plugin 'INNODB_FT_BEING_DELETED'
+2021-01-10T11:29:01.647839Z 0 [Note] Shutting down plugin 'INNODB_FT_DELETED'
+2021-01-10T11:29:01.648416Z 0 [Note] Shutting down plugin 'INNODB_FT_DEFAULT_STOPWORD'
+2021-01-10T11:29:01.648887Z 0 [Note] Shutting down plugin 'INNODB_METRICS'
+2021-01-10T11:29:01.649294Z 0 [Note] Shutting down plugin 'INNODB_TEMP_TABLE_INFO'
+2021-01-10T11:29:01.649771Z 0 [Note] Shutting down plugin 'INNODB_BUFFER_POOL_STATS'
+2021-01-10T11:29:01.650358Z 0 [Note] Shutting down plugin 'INNODB_BUFFER_PAGE_LRU'
+2021-01-10T11:29:01.650796Z 0 [Note] Shutting down plugin 'INNODB_BUFFER_PAGE'
+2021-01-10T11:29:01.651288Z 0 [Note] Shutting down plugin 'INNODB_CMP_PER_INDEX_RESET'
+2021-01-10T11:29:01.651856Z 0 [Note] Shutting down plugin 'INNODB_CMP_PER_INDEX'
+2021-01-10T11:29:01.652404Z 0 [Note] Shutting down plugin 'INNODB_CMPMEM_RESET'
+2021-01-10T11:29:01.652792Z 0 [Note] Shutting down plugin 'INNODB_CMPMEM'
+2021-01-10T11:29:01.653371Z 0 [Note] Shutting down plugin 'INNODB_CMP_RESET'
+2021-01-10T11:29:01.653902Z 0 [Note] Shutting down plugin 'INNODB_CMP'
+2021-01-10T11:29:01.654326Z 0 [Note] Shutting down plugin 'INNODB_LOCK_WAITS'
+2021-01-10T11:29:01.654830Z 0 [Note] Shutting down plugin 'INNODB_LOCKS'
+2021-01-10T11:29:01.655302Z 0 [Note] Shutting down plugin 'INNODB_TRX'
+2021-01-10T11:29:01.655752Z 0 [Note] Shutting down plugin 'InnoDB'
+2021-01-10T11:29:01.656301Z 0 [Note] InnoDB: FTS optimize thread exiting.
+2021-01-10T11:29:01.657060Z 0 [Note] InnoDB: Starting shutdown...
+2021-01-10T11:29:01.760234Z 0 [Note] InnoDB: Dumping buffer pool(s) to /var/lib/mysql/ib_buffer_pool
+2021-01-10T11:29:01.782072Z 0 [Note] InnoDB: Buffer pool(s) dump completed at 210110 11:29:01
+2021-01-10T11:29:03.182448Z 0 [Note] InnoDB: Shutdown completed; log sequence number 2643270
+2021-01-10T11:29:03.194087Z 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2021-01-10T11:29:03.195228Z 0 [Note] Shutting down plugin 'MEMORY'
+2021-01-10T11:29:03.196114Z 0 [Note] Shutting down plugin 'CSV'
+2021-01-10T11:29:03.197187Z 0 [Note] Shutting down plugin 'sha256_password'
+2021-01-10T11:29:03.198220Z 0 [Note] Shutting down plugin 'mysql_native_password'
+2021-01-10T11:29:03.199351Z 0 [Note] Shutting down plugin 'binlog'
+2021-01-10T11:29:03.204668Z 0 [Note] mysqld: Shutdown complete
+
+2021-01-10T11:33:13.033735Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2021-01-10T11:33:13.047879Z 0 [Note] mysqld (mysqld 5.7.27-log) starting as process 1 ...
+2021-01-10T11:33:13.080071Z 0 [Note] InnoDB: PUNCH HOLE support available
+2021-01-10T11:33:13.080495Z 0 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2021-01-10T11:33:13.080905Z 0 [Note] InnoDB: Uses event mutexes
+2021-01-10T11:33:13.081210Z 0 [Note] InnoDB: GCC builtin __atomic_thread_fence() is used for memory barrier
+2021-01-10T11:33:13.081461Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2021-01-10T11:33:13.081772Z 0 [Note] InnoDB: Using Linux native AIO
+2021-01-10T11:33:13.083203Z 0 [Note] InnoDB: Number of pools: 1
+2021-01-10T11:33:13.095286Z 0 [Note] InnoDB: Using CPU crc32 instructions
+2021-01-10T11:33:13.099102Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2021-01-10T11:33:13.126244Z 0 [Note] InnoDB: Completed initialization of buffer pool
+2021-01-10T11:33:13.133792Z 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+2021-01-10T11:33:13.265507Z 0 [Note] InnoDB: Highest supported file format is Barracuda.
+2021-01-10T11:33:13.388215Z 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2021-01-10T11:33:13.391173Z 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2021-01-10T11:33:13.504237Z 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+2021-01-10T11:33:13.510317Z 0 [Note] InnoDB: 96 redo rollback segment(s) found. 96 redo rollback segment(s) are active.
+2021-01-10T11:33:13.510638Z 0 [Note] InnoDB: 32 non-redo rollback segment(s) are active.
+2021-01-10T11:33:13.511339Z 0 [Note] InnoDB: Waiting for purge to start
+2021-01-10T11:33:13.561896Z 0 [Note] InnoDB: 5.7.27 started; log sequence number 2643270
+2021-01-10T11:33:13.582985Z 0 [Note] Plugin 'FEDERATED' is disabled.
+2021-01-10T11:33:13.596970Z 0 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
+2021-01-10T11:33:13.671910Z 0 [Note] Found ca.pem, server-cert.pem and server-key.pem in data directory. Trying to enable SSL support using them.
+2021-01-10T11:33:13.678725Z 0 [Warning] CA certificate ca.pem is self signed.
+2021-01-10T11:33:13.684427Z 0 [Note] Server hostname (bind-address): 'master_2'; port: 3306
+2021-01-10T11:33:13.686851Z 0 [Note]   - 'master_2' resolves to '10.208.0.200';
+2021-01-10T11:33:13.692394Z 0 [Note] InnoDB: Buffer pool(s) load completed at 210110 11:33:13
+2021-01-10T11:33:13.693141Z 0 [Note] Server socket created on IP: '10.208.0.200'.
+2021-01-10T11:33:13.711734Z 0 [Warning] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+2021-01-10T11:33:13.877674Z 0 [Note] Failed to start slave threads for channel ''
+2021-01-10T11:33:14.239823Z 0 [Note] Event Scheduler: Loaded 0 events
+2021-01-10T11:33:14.240739Z 0 [Note] mysqld: ready for connections.
+Version: '5.7.27-log'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server (GPL)
+2021-01-10T11:33:21.662835Z 2 [Note] Access denied for user 'root'@'10.208.0.3' (using password: YES)
+2021-01-10T11:33:23.583170Z 3 [Note] Access denied for user 'root'@'10.208.0.3' (using password: YES)
+2021-01-10T11:33:48.085829Z 4 [Note] Access denied for user 'root'@'10.208.0.2' (using password: YES)
+2021-01-10T11:33:49.146344Z 5 [Note] Access denied for user 'root'@'10.208.0.2' (using password: YES)
+2021-01-10T11:33:50.182344Z 6 [Note] Access denied for user 'root'@'10.208.0.2' (using password: YES)
+2021-01-10T11:33:50.212264Z 7 [Note] Access denied for user 'root'@'10.208.0.2' (using password: YES)
+2021-01-10T11:33:56.246661Z 8 [Note] Access denied for user 'root'@'10.208.0.2' (using password: YES)
+2021-01-10T11:33:57.278032Z 9 [Note] Access denied for user 'root'@'10.208.0.2' (using password: YES)
+2021-01-10T11:33:58.326739Z 10 [Note] Access denied for user 'root'@'10.208.0.2' (using password: YES)
+2021-01-10T11:33:59.369398Z 11 [Note] Access denied for user 'root'@'10.208.0.2' (using password: YES)
+2021-01-10T11:33:59.401679Z 12 [Note] Access denied for user 'root'@'10.208.0.2' (using password: YES)
+2021-01-10T11:54:00.948648Z 0 [Note] Giving 0 client threads a chance to die gracefully
+2021-01-10T11:54:00.949622Z 0 [Note] Shutting down slave threads
+2021-01-10T11:54:00.954977Z 0 [Note] Forcefully disconnecting 0 remaining clients
+2021-01-10T11:54:00.955614Z 0 [Note] Event Scheduler: Purging the queue. 0 events
+2021-01-10T11:54:00.969087Z 0 [Note] Binlog end
+2021-01-10T11:54:00.990273Z 0 [Note] Shutting down plugin 'ngram'
+2021-01-10T11:54:00.996623Z 0 [Note] Shutting down plugin 'partition'
+2021-01-10T11:54:00.999540Z 0 [Note] Shutting down plugin 'BLACKHOLE'
+2021-01-10T11:54:01.001725Z 0 [Note] Shutting down plugin 'ARCHIVE'
+2021-01-10T11:54:01.002467Z 0 [Note] Shutting down plugin 'PERFORMANCE_SCHEMA'
+2021-01-10T11:54:01.003385Z 0 [Note] Shutting down plugin 'MRG_MYISAM'
+2021-01-10T11:54:01.004344Z 0 [Note] Shutting down plugin 'MyISAM'
+2021-01-10T11:54:01.005028Z 0 [Note] Shutting down plugin 'INNODB_SYS_VIRTUAL'
+2021-01-10T11:54:01.005838Z 0 [Note] Shutting down plugin 'INNODB_SYS_DATAFILES'
+2021-01-10T11:54:01.006309Z 0 [Note] Shutting down plugin 'INNODB_SYS_TABLESPACES'
+2021-01-10T11:54:01.006919Z 0 [Note] Shutting down plugin 'INNODB_SYS_FOREIGN_COLS'
+2021-01-10T11:54:01.007456Z 0 [Note] Shutting down plugin 'INNODB_SYS_FOREIGN'
+2021-01-10T11:54:01.008135Z 0 [Note] Shutting down plugin 'INNODB_SYS_FIELDS'
+2021-01-10T11:54:01.008886Z 0 [Note] Shutting down plugin 'INNODB_SYS_COLUMNS'
+2021-01-10T11:54:01.009479Z 0 [Note] Shutting down plugin 'INNODB_SYS_INDEXES'
+2021-01-10T11:54:01.010049Z 0 [Note] Shutting down plugin 'INNODB_SYS_TABLESTATS'
+2021-01-10T11:54:01.010589Z 0 [Note] Shutting down plugin 'INNODB_SYS_TABLES'
+2021-01-10T11:54:01.011208Z 0 [Note] Shutting down plugin 'INNODB_FT_INDEX_TABLE'
+2021-01-10T11:54:01.011713Z 0 [Note] Shutting down plugin 'INNODB_FT_INDEX_CACHE'
+2021-01-10T11:54:01.012273Z 0 [Note] Shutting down plugin 'INNODB_FT_CONFIG'
+2021-01-10T11:54:01.012854Z 0 [Note] Shutting down plugin 'INNODB_FT_BEING_DELETED'
+2021-01-10T11:54:01.013497Z 0 [Note] Shutting down plugin 'INNODB_FT_DELETED'
+2021-01-10T11:54:01.014168Z 0 [Note] Shutting down plugin 'INNODB_FT_DEFAULT_STOPWORD'
+2021-01-10T11:54:01.014750Z 0 [Note] Shutting down plugin 'INNODB_METRICS'
+2021-01-10T11:54:01.015358Z 0 [Note] Shutting down plugin 'INNODB_TEMP_TABLE_INFO'
+2021-01-10T11:54:01.016040Z 0 [Note] Shutting down plugin 'INNODB_BUFFER_POOL_STATS'
+2021-01-10T11:54:01.016660Z 0 [Note] Shutting down plugin 'INNODB_BUFFER_PAGE_LRU'
+2021-01-10T11:54:01.018615Z 0 [Note] Shutting down plugin 'INNODB_BUFFER_PAGE'
+2021-01-10T11:54:01.019434Z 0 [Note] Shutting down plugin 'INNODB_CMP_PER_INDEX_RESET'
+2021-01-10T11:54:01.020099Z 0 [Note] Shutting down plugin 'INNODB_CMP_PER_INDEX'
+2021-01-10T11:54:01.021063Z 0 [Note] Shutting down plugin 'INNODB_CMPMEM_RESET'
+2021-01-10T11:54:01.021935Z 0 [Note] Shutting down plugin 'INNODB_CMPMEM'
+2021-01-10T11:54:01.023146Z 0 [Note] Shutting down plugin 'INNODB_CMP_RESET'
+2021-01-10T11:54:01.023857Z 0 [Note] Shutting down plugin 'INNODB_CMP'
+2021-01-10T11:54:01.024439Z 0 [Note] Shutting down plugin 'INNODB_LOCK_WAITS'
+2021-01-10T11:54:01.025232Z 0 [Note] Shutting down plugin 'INNODB_LOCKS'
+2021-01-10T11:54:01.025917Z 0 [Note] Shutting down plugin 'INNODB_TRX'
+2021-01-10T11:54:01.026430Z 0 [Note] Shutting down plugin 'InnoDB'
+2021-01-10T11:54:01.029105Z 0 [Note] InnoDB: FTS optimize thread exiting.
+2021-01-10T11:54:01.030168Z 0 [Note] InnoDB: Starting shutdown...
+2021-01-10T11:54:01.132679Z 0 [Note] InnoDB: Dumping buffer pool(s) to /var/lib/mysql/ib_buffer_pool
+2021-01-10T11:54:01.144276Z 0 [Note] InnoDB: Buffer pool(s) dump completed at 210110 11:54:01
+2021-01-10T11:54:02.757908Z 0 [Note] InnoDB: Shutdown completed; log sequence number 2643298
+2021-01-10T11:54:02.765799Z 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2021-01-10T11:54:02.768386Z 0 [Note] Shutting down plugin 'MEMORY'
+2021-01-10T11:54:02.769840Z 0 [Note] Shutting down plugin 'CSV'
+2021-01-10T11:54:02.770950Z 0 [Note] Shutting down plugin 'sha256_password'
+2021-01-10T11:54:02.772304Z 0 [Note] Shutting down plugin 'mysql_native_password'
+2021-01-10T11:54:02.773070Z 0 [Note] Shutting down plugin 'binlog'
+2021-01-10T11:54:02.778929Z 0 [Note] mysqld: Shutdown complete
+
+2021-01-10T11:54:48.428509Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2021-01-10T11:54:48.446074Z 0 [Note] mysqld (mysqld 5.7.27-log) starting as process 1 ...
+2021-01-10T11:54:48.485019Z 0 [Note] InnoDB: PUNCH HOLE support available
+2021-01-10T11:54:48.485710Z 0 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2021-01-10T11:54:48.486116Z 0 [Note] InnoDB: Uses event mutexes
+2021-01-10T11:54:48.486455Z 0 [Note] InnoDB: GCC builtin __atomic_thread_fence() is used for memory barrier
+2021-01-10T11:54:48.486754Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2021-01-10T11:54:48.487142Z 0 [Note] InnoDB: Using Linux native AIO
+2021-01-10T11:54:48.488052Z 0 [Note] InnoDB: Number of pools: 1
+2021-01-10T11:54:48.488644Z 0 [Note] InnoDB: Using CPU crc32 instructions
+2021-01-10T11:54:48.491357Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2021-01-10T11:54:48.511401Z 0 [Note] InnoDB: Completed initialization of buffer pool
+2021-01-10T11:54:48.514772Z 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+2021-01-10T11:54:48.557084Z 0 [Note] InnoDB: Highest supported file format is Barracuda.
+2021-01-10T11:54:48.563672Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2021-01-10T11:54:48.576166Z 0 [Note] mysqld (mysqld 5.7.27-log) starting as process 1 ...
+2021-01-10T11:54:48.619315Z 0 [Note] InnoDB: PUNCH HOLE support available
+2021-01-10T11:54:48.620180Z 0 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2021-01-10T11:54:48.620688Z 0 [Note] InnoDB: Uses event mutexes
+2021-01-10T11:54:48.621027Z 0 [Note] InnoDB: GCC builtin __atomic_thread_fence() is used for memory barrier
+2021-01-10T11:54:48.623396Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2021-01-10T11:54:48.623839Z 0 [Note] InnoDB: Using Linux native AIO
+2021-01-10T11:54:48.624829Z 0 [Note] InnoDB: Number of pools: 1
+2021-01-10T11:54:48.625540Z 0 [Note] InnoDB: Using CPU crc32 instructions
+2021-01-10T11:54:48.632697Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2021-01-10T11:54:48.664719Z 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2021-01-10T11:54:48.667525Z 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2021-01-10T11:54:48.692181Z 0 [Note] InnoDB: Completed initialization of buffer pool
+2021-01-10T11:54:48.717961Z 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+2021-01-10T11:54:48.741944Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:54:48.744381Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:54:48.745745Z 0 [Note] InnoDB: Retrying to lock the first data file
+2021-01-10T11:54:48.747508Z 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+2021-01-10T11:54:48.753444Z 0 [Note] InnoDB: 96 redo rollback segment(s) found. 96 redo rollback segment(s) are active.
+2021-01-10T11:54:48.753923Z 0 [Note] InnoDB: 32 non-redo rollback segment(s) are active.
+2021-01-10T11:54:48.754703Z 0 [Note] InnoDB: 5.7.27 started; log sequence number 2643298
+2021-01-10T11:54:48.756241Z 0 [Note] Plugin 'FEDERATED' is disabled.
+2021-01-10T11:54:48.756859Z 0 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
+2021-01-10T11:54:48.831459Z 0 [Note] InnoDB: Buffer pool(s) load completed at 210110 11:54:48
+2021-01-10T11:54:48.837389Z 0 [Note] Found ca.pem, server-cert.pem and server-key.pem in data directory. Trying to enable SSL support using them.
+2021-01-10T11:54:48.842479Z 0 [Warning] CA certificate ca.pem is self signed.
+2021-01-10T11:54:48.845939Z 0 [Note] Server hostname (bind-address): 'master_1'; port: 3306
+2021-01-10T11:54:48.846490Z 0 [Note]   - 'master_1' resolves to '10.208.0.100';
+2021-01-10T11:54:48.846815Z 0 [Note] Server socket created on IP: '10.208.0.100'.
+2021-01-10T11:54:48.861115Z 0 [Warning] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+2021-01-10T11:54:49.000545Z 0 [Note] Failed to start slave threads for channel ''
+2021-01-10T11:54:49.323019Z 0 [Note] Event Scheduler: Loaded 0 events
+2021-01-10T11:54:49.323559Z 0 [Note] mysqld: ready for connections.
+Version: '5.7.27-log'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server (GPL)
+2021-01-10T11:54:49.747067Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:54:49.747508Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:54:50.747849Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:54:50.748305Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:54:51.748837Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:54:51.749557Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:54:52.750013Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:54:52.750440Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:54:53.751003Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:54:53.751532Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:54:54.752134Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:54:54.752757Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:54:55.753341Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:54:55.755408Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:54:56.756570Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:54:56.757522Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:54:57.757988Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:54:57.759220Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:54:58.760168Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:54:58.761535Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:54:59.762940Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:54:59.765479Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:55:00.767492Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:55:00.769328Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:55:01.771527Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:55:01.773245Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:55:02.774942Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:55:02.777357Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:55:03.779287Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:55:03.781059Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:55:04.782790Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:55:04.784947Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:55:05.787109Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:55:05.788859Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:55:06.791223Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:55:06.792215Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:55:07.793147Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:55:07.794911Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:55:08.797007Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:55:08.798634Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:55:09.800017Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:55:09.802467Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:55:10.805103Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:55:10.806638Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:55:11.807923Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:55:11.809070Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:55:12.810962Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:55:12.813139Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:55:13.815070Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:55:13.816044Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:55:14.816885Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:55:14.817708Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:55:15.818879Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:55:15.820851Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:55:16.822274Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:55:16.823319Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:55:17.824483Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:55:17.826277Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:55:18.827938Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:55:18.829183Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:55:19.830369Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:55:19.831362Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:55:20.832303Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:55:20.834283Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:55:21.835963Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:55:21.837858Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:55:22.840291Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:55:22.841225Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:55:23.842383Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:55:23.844940Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:55:24.846528Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:55:24.848478Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:55:25.850478Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:55:25.851591Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:55:26.852845Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:55:26.853636Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:55:27.854672Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:55:27.855558Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:55:28.856389Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:55:28.857124Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:55:29.857979Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:55:29.859744Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:55:30.860074Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:55:30.892699Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:55:31.896533Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:55:31.897595Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:55:32.898905Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:55:32.899592Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:55:33.900186Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:55:33.902108Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:55:34.903596Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:55:34.911741Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:55:35.914406Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:55:35.915340Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:55:36.916166Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:55:36.918603Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:55:37.920085Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:55:37.922183Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:55:38.924130Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:55:38.934153Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:55:39.941437Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:55:39.943490Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:55:40.945430Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:55:40.947133Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:55:41.949686Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:55:41.950787Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:55:42.951509Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:55:42.952530Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:55:43.953828Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:55:43.955927Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:55:44.957715Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:55:44.958595Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:55:45.959458Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:55:45.967181Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:55:46.968699Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:55:46.970815Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:55:47.972323Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:55:47.973274Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:55:48.977622Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:55:48.980233Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:55:49.984274Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:55:49.985200Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:55:50.986084Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:55:50.987350Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:55:51.996193Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:55:51.997083Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:55:52.997817Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:55:52.999744Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:55:54.001954Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:55:54.004458Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:55:55.005560Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:55:55.012385Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:55:56.015750Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:55:56.016353Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:55:57.017540Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:55:57.021137Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:55:58.024784Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:55:58.029111Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:55:59.031758Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:55:59.060935Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:56:00.064297Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:56:00.098235Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:56:01.100437Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:56:01.110566Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:56:02.127872Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:56:02.138940Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:56:03.139635Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:56:03.141714Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:56:04.143477Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:56:04.145280Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:56:05.160231Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:56:05.162684Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:56:06.164735Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:56:06.165771Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:56:07.167381Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:56:07.169182Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:56:08.170958Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:56:08.171973Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:56:09.172922Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:56:09.174032Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:56:10.175157Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:56:10.175936Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:56:11.176702Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:56:11.177406Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:56:12.178096Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:56:12.180243Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:56:13.182079Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:56:13.183565Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:56:14.185144Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:56:14.186025Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:56:15.186622Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:56:15.187243Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:56:16.187906Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:56:16.196815Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:56:17.198727Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:56:17.201369Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:56:18.202587Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:56:18.203553Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:56:19.204499Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:56:19.205499Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:56:20.206273Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:56:20.207534Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:56:21.209437Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:56:21.210288Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:56:22.211067Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:56:22.211800Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:56:23.212739Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:56:23.214425Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:56:24.215852Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:56:24.216634Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:56:25.217352Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:56:25.218256Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:56:26.218977Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:56:26.235422Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:56:27.237428Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:56:27.238246Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:56:28.239019Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:56:28.242352Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:56:29.244733Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 11
+2021-01-10T11:56:29.245342Z 0 [Note] InnoDB: Check that you do not already have another mysqld process using the same InnoDB data or log files.
+2021-01-10T11:56:29.250626Z 0 [Note] InnoDB: Unable to open the first data file
+2021-01-10T11:56:29.251212Z 0 [ERROR] InnoDB: Operating system error number 11 in a file operation.
+2021-01-10T11:56:29.252395Z 0 [ERROR] InnoDB: Error number 11 means 'Resource temporarily unavailable'
+2021-01-10T11:56:29.252848Z 0 [Note] InnoDB: Some operating system error numbers are described at http://dev.mysql.com/doc/refman/5.7/en/operating-system-error-codes.html
+2021-01-10T11:56:29.253257Z 0 [ERROR] InnoDB: Cannot open datafile './ibdata1'
+2021-01-10T11:56:29.253604Z 0 [ERROR] InnoDB: Could not open or create the system tablespace. If you tried to add new data files to the system tablespace, and it failed here, you should now edit innodb_data_file_path in my.cnf back to what it was, and remove the new ibdata files InnoDB created in this failed attempt. InnoDB only wrote those files full of zeros, but did not yet use them in any way. But be careful: do not remove old data files which contain your precious data!
+2021-01-10T11:56:29.254037Z 0 [ERROR] InnoDB: Plugin initialization aborted with error Cannot open a file
+2021-01-10T11:56:29.461193Z 0 [ERROR] Plugin 'InnoDB' init function returned error.
+2021-01-10T11:56:29.467985Z 0 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2021-01-10T11:56:29.469960Z 0 [ERROR] Failed to initialize builtin plugins.
+2021-01-10T11:56:29.471366Z 0 [ERROR] Aborting
+
+2021-01-10T11:56:29.475776Z 0 [Note] Binlog end
+2021-01-10T11:56:29.479911Z 0 [Note] Shutting down plugin 'CSV'
+2021-01-10T11:56:29.487149Z 0 [Note] mysqld: Shutdown complete
+
+2021-01-10T12:00:38.367969Z 0 [Note] Giving 0 client threads a chance to die gracefully
+2021-01-10T12:00:38.369236Z 0 [Note] Shutting down slave threads
+2021-01-10T12:00:38.371925Z 0 [Note] Forcefully disconnecting 0 remaining clients
+2021-01-10T12:00:38.372484Z 0 [Note] Event Scheduler: Purging the queue. 0 events
+2021-01-10T12:00:38.390223Z 0 [Note] Binlog end
+2021-01-10T12:00:38.401461Z 0 [Note] Shutting down plugin 'ngram'
+2021-01-10T12:00:38.412964Z 0 [Note] Shutting down plugin 'partition'
+2021-01-10T12:00:38.414664Z 0 [Note] Shutting down plugin 'BLACKHOLE'
+2021-01-10T12:00:38.417833Z 0 [Note] Shutting down plugin 'ARCHIVE'
+2021-01-10T12:00:38.418350Z 0 [Note] Shutting down plugin 'PERFORMANCE_SCHEMA'
+2021-01-10T12:00:38.418977Z 0 [Note] Shutting down plugin 'MRG_MYISAM'
+2021-01-10T12:00:38.419492Z 0 [Note] Shutting down plugin 'MyISAM'
+2021-01-10T12:00:38.420110Z 0 [Note] Shutting down plugin 'INNODB_SYS_VIRTUAL'
+2021-01-10T12:00:38.420953Z 0 [Note] Shutting down plugin 'INNODB_SYS_DATAFILES'
+2021-01-10T12:00:38.421483Z 0 [Note] Shutting down plugin 'INNODB_SYS_TABLESPACES'
+2021-01-10T12:00:38.422206Z 0 [Note] Shutting down plugin 'INNODB_SYS_FOREIGN_COLS'
+2021-01-10T12:00:38.423107Z 0 [Note] Shutting down plugin 'INNODB_SYS_FOREIGN'
+2021-01-10T12:00:38.423859Z 0 [Note] Shutting down plugin 'INNODB_SYS_FIELDS'
+2021-01-10T12:00:38.424374Z 0 [Note] Shutting down plugin 'INNODB_SYS_COLUMNS'
+2021-01-10T12:00:38.425034Z 0 [Note] Shutting down plugin 'INNODB_SYS_INDEXES'
+2021-01-10T12:00:38.425575Z 0 [Note] Shutting down plugin 'INNODB_SYS_TABLESTATS'
+2021-01-10T12:00:38.426159Z 0 [Note] Shutting down plugin 'INNODB_SYS_TABLES'
+2021-01-10T12:00:38.426774Z 0 [Note] Shutting down plugin 'INNODB_FT_INDEX_TABLE'
+2021-01-10T12:00:38.427294Z 0 [Note] Shutting down plugin 'INNODB_FT_INDEX_CACHE'
+2021-01-10T12:00:38.427936Z 0 [Note] Shutting down plugin 'INNODB_FT_CONFIG'
+2021-01-10T12:00:38.428511Z 0 [Note] Shutting down plugin 'INNODB_FT_BEING_DELETED'
+2021-01-10T12:00:38.429092Z 0 [Note] Shutting down plugin 'INNODB_FT_DELETED'
+2021-01-10T12:00:38.429903Z 0 [Note] Shutting down plugin 'INNODB_FT_DEFAULT_STOPWORD'
+2021-01-10T12:00:38.430412Z 0 [Note] Shutting down plugin 'INNODB_METRICS'
+2021-01-10T12:00:38.430894Z 0 [Note] Shutting down plugin 'INNODB_TEMP_TABLE_INFO'
+2021-01-10T12:00:38.431629Z 0 [Note] Shutting down plugin 'INNODB_BUFFER_POOL_STATS'
+2021-01-10T12:00:38.432202Z 0 [Note] Shutting down plugin 'INNODB_BUFFER_PAGE_LRU'
+2021-01-10T12:00:38.432627Z 0 [Note] Shutting down plugin 'INNODB_BUFFER_PAGE'
+2021-01-10T12:00:38.433120Z 0 [Note] Shutting down plugin 'INNODB_CMP_PER_INDEX_RESET'
+2021-01-10T12:00:38.433652Z 0 [Note] Shutting down plugin 'INNODB_CMP_PER_INDEX'
+2021-01-10T12:00:38.434205Z 0 [Note] Shutting down plugin 'INNODB_CMPMEM_RESET'
+2021-01-10T12:00:38.434669Z 0 [Note] Shutting down plugin 'INNODB_CMPMEM'
+2021-01-10T12:00:38.435342Z 0 [Note] Shutting down plugin 'INNODB_CMP_RESET'
+2021-01-10T12:00:38.435775Z 0 [Note] Shutting down plugin 'INNODB_CMP'
+2021-01-10T12:00:38.436111Z 0 [Note] Shutting down plugin 'INNODB_LOCK_WAITS'
+2021-01-10T12:00:38.436583Z 0 [Note] Shutting down plugin 'INNODB_LOCKS'
+2021-01-10T12:00:38.437122Z 0 [Note] Shutting down plugin 'INNODB_TRX'
+2021-01-10T12:00:38.437656Z 0 [Note] Shutting down plugin 'InnoDB'
+2021-01-10T12:00:38.438099Z 0 [Note] InnoDB: FTS optimize thread exiting.
+2021-01-10T12:00:38.438629Z 0 [Note] InnoDB: Starting shutdown...
+2021-01-10T12:00:38.541046Z 0 [Note] InnoDB: Dumping buffer pool(s) to /var/lib/mysql/ib_buffer_pool
+2021-01-10T12:00:38.551841Z 0 [Note] InnoDB: Buffer pool(s) dump completed at 210110 12:00:38
+2021-01-10T12:00:39.757285Z 0 [Note] InnoDB: Shutdown completed; log sequence number 2643552
+2021-01-10T12:00:39.761711Z 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2021-01-10T12:00:39.762266Z 0 [Note] Shutting down plugin 'MEMORY'
+2021-01-10T12:00:39.762703Z 0 [Note] Shutting down plugin 'CSV'
+2021-01-10T12:00:39.763238Z 0 [Note] Shutting down plugin 'sha256_password'
+2021-01-10T12:00:39.763623Z 0 [Note] Shutting down plugin 'mysql_native_password'
+2021-01-10T12:00:39.764174Z 0 [Note] Shutting down plugin 'binlog'
+2021-01-10T12:00:39.767680Z 0 [Note] mysqld: Shutdown complete
+
